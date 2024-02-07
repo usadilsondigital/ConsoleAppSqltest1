@@ -41,6 +41,11 @@ namespace ConsoleAppSqltest1
                     cmd.CommandType = commandType;
                     cmd.Parameters.AddRange(parameters);
                     conn.Open();
+
+                    // When using CommandBehavior.CloseConnection, the connection will be closed when the   
+                    // IDataReader is closed.  
+                    SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+
                 }
 
 

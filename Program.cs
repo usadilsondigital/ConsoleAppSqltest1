@@ -19,7 +19,10 @@ namespace ConsoleAppSqltest1
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    
+                    using (SqlCommand cmd = new SqlCommand(commandText, conn))
+                    {
+                        
+                    }
                 }
 
             }

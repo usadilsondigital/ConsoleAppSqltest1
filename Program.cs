@@ -24,7 +24,9 @@ namespace ConsoleAppSqltest1
 
 
         static void CountPlansbyYear(String connectionString, Int32 year)
-        { }
+        {
+            String commandText = "Select Count([PlanID]) FROM [janizeck].[dbo].[tblPlan] Where PlanYear=@Year";
+        }
             //
 
 

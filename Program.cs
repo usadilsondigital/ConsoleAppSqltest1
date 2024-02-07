@@ -36,7 +36,10 @@ namespace ConsoleAppSqltest1
                 CommandType commandType, params SqlParameter[] parameters)
             {
                 SqlConnection conn = new SqlConnection(connectionString);
-            }
+                using (SqlCommand cmd = new SqlCommand(commandText, conn))
+                {
+
+                }
 
 
 

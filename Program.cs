@@ -14,8 +14,8 @@ namespace ConsoleAppSqltest1
         static void Main(string[] args)
         {
             String connectionString = "Data Source=DESKTOP-3H9KDN6\\SQLEXPRESS;Initial Catalog=janizeck;User ID=sa;Password=sa;Integrated Security=True;Asynchronous Processing=true;";
-           
 
+            CountPlansbyYear(connectionString, 2012);
 
 
             Console.WriteLine("Please press any key to exit...");

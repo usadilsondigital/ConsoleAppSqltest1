@@ -22,10 +22,12 @@ namespace ConsoleAppSqltest1
                     // There're three command types: StoredProcedure, Text, TableDirect. The TableDirect   
                     // type is only for OLE DB.    
                     cmd.CommandType = commandType;
+                    cmd.Parameters.AddRange(parameters);
+
                 }
 
-         
-        }
+
+            }
 
 
         static void Main(string[] args)

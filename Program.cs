@@ -22,11 +22,14 @@ namespace ConsoleAppSqltest1
             Console.ReadKey();
         }
 
-        //
+
+        static void CountPlansbyYear(String connectionString, Int32 year)
+        { }
+            //
 
 
 
 
-    }
+        }
 }
 

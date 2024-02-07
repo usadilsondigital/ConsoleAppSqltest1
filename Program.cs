@@ -38,7 +38,8 @@ namespace ConsoleAppSqltest1
                 SqlConnection conn = new SqlConnection(connectionString);
                 using (SqlCommand cmd = new SqlCommand(commandText, conn))
                 {
-
+                    cmd.CommandType = commandType;
+                    cmd.Parameters.AddRange(parameters);
                 }
 
 

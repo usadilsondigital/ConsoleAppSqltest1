@@ -23,7 +23,8 @@ namespace ConsoleAppSqltest1
                     // type is only for OLE DB.    
                     cmd.CommandType = commandType;
                     cmd.Parameters.AddRange(parameters);
-
+                    conn.Open();
+                    return cmd.ExecuteNonQuery();
                 }
 
 

@@ -19,6 +19,9 @@ namespace ConsoleAppSqltest1
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
+                    // There're three command types: StoredProcedure, Text, TableDirect. The TableDirect   
+                    // type is only for OLE DB.    
+                    cmd.CommandType = commandType;
                 }
 
          

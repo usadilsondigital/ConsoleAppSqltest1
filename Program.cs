@@ -10,6 +10,12 @@ namespace ConsoleAppSqltest1
 {
     internal class Program
     {
+        static class SqlHelper
+        {
+            
+
+        }
+
 
         static void Main(string[] args)
         {

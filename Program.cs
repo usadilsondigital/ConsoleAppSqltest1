@@ -17,8 +17,9 @@ namespace ConsoleAppSqltest1
             public static Object ExecuteScalar(String connectionString, String commandText,
                 CommandType commandType, params SqlParameter[] parameters)
             {
-               
-            }
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                }
 
          
         }

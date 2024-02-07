@@ -27,6 +27,7 @@ namespace ConsoleAppSqltest1
         {
             String commandText = "Select Count([PlanID]) FROM [janizeck].[dbo].[tblPlan] Where PlanYear=@Year";
             SqlParameter parameterYear = new SqlParameter("@Year", SqlDbType.Int);
+            parameterYear.Value = year;
         }
             //
 

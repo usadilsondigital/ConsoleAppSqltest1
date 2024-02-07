@@ -26,6 +26,8 @@ namespace ConsoleAppSqltest1
                         cmd.CommandType = commandType;
                         cmd.Parameters.AddRange(parameters);
 
+                        conn.Open();
+                        return cmd.ExecuteNonQuery();
                     }
                 }
 

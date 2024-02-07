@@ -31,6 +31,7 @@ namespace ConsoleAppSqltest1
             Object oValue = SqlHelper.ExecuteScalar(connectionString, commandText, CommandType.Text, parameterYear);
             Int32 count;
             if (Int32.TryParse(oValue.ToString(), out count))
+                Console.WriteLine("There {0} {1} plans{2} in {3}.", count > 1 ? "are" : "is", count, count > 1 ? "s" : null, year);
         }
             //
 

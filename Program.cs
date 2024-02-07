@@ -13,6 +13,11 @@ namespace ConsoleAppSqltest1
         static class SqlHelper
         {
 
+            // Set the connection, command, and then execute the command with non query.  
+            public static Int32 ExecuteNonQuery(String connectionString, String commandText,
+                CommandType commandType, params SqlParameter[] parameters)
+            { }
+
             // Set the connection, command, and then execute the command and only return one value.  
             public static Object ExecuteScalar(String connectionString, String commandText,
                 CommandType commandType, params SqlParameter[] parameters)

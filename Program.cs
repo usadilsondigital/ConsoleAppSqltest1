@@ -29,6 +29,7 @@ namespace ConsoleAppSqltest1
             SqlParameter parameterYear = new SqlParameter("@Year", SqlDbType.Int);
             parameterYear.Value = year;
             Object oValue = SqlHelper.ExecuteScalar(connectionString, commandText, CommandType.Text, parameterYear);
+            Int32 count;
         }
             //
 

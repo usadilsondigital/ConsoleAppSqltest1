@@ -29,9 +29,19 @@ namespace ConsoleAppSqltest1
                         return cmd.ExecuteNonQuery();
                     }
                 }
-
-
             }
+
+            // Set the connection, command, and then execute the command with query and return the reader.  
+            public static SqlDataReader ExecuteReader(String connectionString, String commandText,
+                CommandType commandType, params SqlParameter[] parameters)
+            {
+                SqlConnection conn = new SqlConnection(connectionString);
+            }
+
+
+
+
+        }
 
 
         static void Main(string[] args)
@@ -56,11 +66,11 @@ namespace ConsoleAppSqltest1
             if (Int32.TryParse(oValue.ToString(), out count))
                 Console.WriteLine("There {0} {1} plans{2} in {3}.", count > 1 ? "are" : "is", count, count > 1 ? "s" : null, year);
         }
-            //
+        //
 
 
 
 
-        }
+    }
 }
 
